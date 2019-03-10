@@ -91,6 +91,10 @@ function getArrival(time, freq) {
             closest = times[i];
         }
     }
+
+    if (closest < date) {
+        closest = date;
+    }
     
 
     return closest;
